@@ -1,7 +1,15 @@
-﻿internal class Program
+﻿using TMSLesson1;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Clinic clinic = new Clinic();
+        clinic.InitializeClicnic();
+        clinic.GetRequestedDoctorType();
+        clinic.PrintRequestedDoctors();
+        clinic.PrintCabinetNumber();
+        clinic.DoctorWorks();
+        clinic.DoctorsSayGoodbye();
     }
 }
